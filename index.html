@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <style>
+
+  body{
+    background-image: url("https://tinyurl.com/y77c3y32");
+}
+
+#container {
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;   
+    justify-content: center;  
+    height:500px;
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+  </style>
+</head>
+<body>
+<div id=container>
+<form  method="get" action="adddomain.php">
+<input class="button button1" type="submit"  name="submitted" value="Add a domain"/></form>
+<form action="display.php" method="get">
+<input class="button button2" type="submit" name="display" value="Display the available domains"><br><br>
+<div>
+</div>
+</div>
+</body>
+</html>
